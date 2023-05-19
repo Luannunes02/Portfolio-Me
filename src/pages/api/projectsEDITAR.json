@@ -1,0 +1,121 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "nome": "Noro-Market",
+            "tecnologias": 
+            [
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/f45ae564-d437-4c76-9b05-f814acc348d5",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/766f4d43-3f5e-44a2-9f33-609dbe0d3307",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/dd2a4142-189c-4d28-90e3-8384f7c9205f",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/1b9c7086-73e5-44a0-b455-92773d40b992",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/5039fa42-0952-4f67-aaba-a549035730c4"
+        ],
+            "color": "",
+            "subColor": "",
+            "capa": "https://user-images.githubusercontent.com/105875989/221195856-8c917cbd-ed6e-4f41-a922-3f4cb30fb095.png",
+            "githubLink": "https://github.com/Luannunes02/noro-market/blob/main/README.md",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/221195856-8c917cbd-ed6e-4f41-a922-3f4cb30fb095.png",
+            "deploy": "https://noro-market.vercel.app"
+        },
+        {
+            "id": 2,
+            "nome": "Regiane-Corretora",
+            "descricao": "ReactJS - Bootstrap - JavaScript - Scss ",
+            "capa": "https://user-images.githubusercontent.com/105875989/221062690-5d853a0f-aae3-4685-8e3d-5b2a50bcf94c.png",
+            "githubLink": "https://github.com/Luannunes02/regiane-corretora",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/221062383-ea8a081e-18d5-4ddf-930f-d1e89180f93b.gif",
+            "deploy": "https://regiane-corretora.vercel.app"
+        },
+        {
+            "id": 3,
+            "nome": "Ciane-Corretora",
+            "descricao": "ReactJS - Bootstrap - JavaScript - Scss ",
+            "capa": "https://user-images.githubusercontent.com/105875989/221062091-6cef1d45-91ae-4ba1-970b-983abfb2a7b1.png",
+            "githubLink": "https://github.com/Luannunes02/Ciane-corretora",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/221061483-9a1e5da5-9cb0-415f-9ab5-64100fa40f5c.gif",
+            "deploy": "https://ciane-corretora.vercel.app"
+        },        
+        {
+            "id": 4,
+            "nome": "Noroeste",
+            "descricao": "ReactJS - Bootstrap - JavaScript - CSS - HTML",
+            "capa": "https://user-images.githubusercontent.com/105875989/198148570-db2b0fde-55d7-4d3d-979b-1f61f0a677dc.png",
+            "githubLink": "https://github.com/Luannunes02/Noroeste",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/198149469-174a317d-8111-465e-8dbd-4749e3a84fcd.gif",
+            "deploy": "https://noroeste.vercel.app"
+        },
+        {
+            "id": 5,
+            "nome": "IPAM",
+            "descricao": "ReactJS - Bootstrap - TS - Styled-components",
+            "capa": "https://user-images.githubusercontent.com/105875989/210191161-02c81622-8497-4d4d-a78f-41bd92c8fe8a.png",
+            "githubLink": "https://github.com/Luannunes02/IPAM",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/210191477-04b77c2c-b6c9-4396-96e1-398a9ccf649d.gif",
+            "deploy": "https://ipam-delta.vercel.app"
+        },
+        {
+            "id": 6,
+            "nome": "ReactPosts",
+            "descricao": "ReactJS - Bootstrap - TS - Styled-components",
+            "capa": "https://user-images.githubusercontent.com/105875989/203288618-b8c6b092-50fe-45dd-b7cd-e1caff447419.png",
+            "githubLink": "https://github.com/Luannunes02/ReactPosts",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/203288653-8ef0682c-1dfd-44bc-9d09-89986613afcb.gif",
+            "deploy": "https://reactposts-delta.vercel.app"
+        },
+        {
+            "id": 7,
+            "nome": "PrimeFlix",
+            "descricao": "React - JavaScript - CSS - HTML",
+            "capa": "https://user-images.githubusercontent.com/105875989/196137103-fb0930ba-6f31-48ca-8f11-ead2df7afd02.png",
+            "githubLink": "https://github.com/Luannunes02/PrimeFlix-Site",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/196571717-b7716e80-fc93-4eba-b3cc-f9bcd9530437.gif",
+            "deploy": "https://primeflix-zeta.vercel.app"
+        },
+        {
+            "id": 8,
+            "nome": "Fakeshop",
+            "descricao": "React - Redux - JavaScript",
+            "capa": "https://user-images.githubusercontent.com/105875989/215294738-84ac9d2f-cc52-460f-83e1-81517b3e78e2.png",
+            "githubLink": "https://github.com/Luannunes02/FakeShop",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/215294672-6cb6191b-ed22-4688-9555-3a0495d64158.gif",
+            "deploy": "https://fakeshop-nu.vercel.app"
+        },
+        {
+            "id": 9,
+            "nome": "DevStore",
+            "descricao": "JavaScript - Bootstrap - CSS - HTML",
+            "capa": "https://user-images.githubusercontent.com/105875989/196402970-e6af7913-d0c1-4673-a81e-b07389d8462b.png",
+            "githubLink": "https://github.com/Luannunes02/DevStore",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/196573676-394f87be-8eb6-4806-818d-4708862a0804.gif",
+            "deploy": "https://devstore-amber.vercel.app"
+        },
+        {
+            "id": 10,
+            "nome": "Créditei",
+            "descricao": "React - Bootstrap - JavaScript - CSS - HTML",
+            "capa": "https://user-images.githubusercontent.com/105875989/196291912-ae454af7-2e4c-4165-9599-99bf12bb8a88.png",
+            "githubLink": "https://github.com/Luannunes02/Landing-Page",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/196572858-5e482df5-1c24-4bfa-b274-e5899e37a07c.gif",
+            "deploy": "https://landing-page-ochre-three.vercel.app"
+        },
+        {
+            "id": 11,
+            "nome": "Jogo-da-Velha",
+            "descricao": "JavaScript - CSS - HTML",
+            "capa": "https://user-images.githubusercontent.com/105875989/196404607-4db48eba-8693-4a7f-8527-2b843955cb6b.png",
+            "githubLink": "https://github.com/Luannunes02/Jogo-da-velha",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/196572345-6fdb96c3-8cbe-4682-b86a-3584c5f3d555.gif",
+            "deploy": "https://jogo-da-velha-sable.vercel.app"
+        },
+        {
+            "id": 12,
+            "nome": "Gerador-de-piada",
+            "descricao": "JavaScript - CSS - HTML",
+            "capa": "https://user-images.githubusercontent.com/105875989/196560027-a07a4b76-947b-4b8e-9de8-9fe8f93e2581.png",
+            "githubLink": "https://github.com/Luannunes02/Gerador-de-piadas",
+            "linkyoutube": "https://user-images.githubusercontent.com/105875989/196572075-c7fe8991-4959-4080-bb31-3093bf421e8c.gif",
+            "deploy": "https://gerador-de-piadas.vercel.app"
+        }
+    ]
+}
