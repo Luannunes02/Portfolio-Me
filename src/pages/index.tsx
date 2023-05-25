@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { useScrollDirection } from "@/Hooks/useScrollDirection";
 import { useSpring, animated } from "@react-spring/web";
+import "intersection-observer";
 import * as Yup from "yup";
 
 import LuanLogoWhite from "@/assets/luan-logo-white.png";
@@ -60,6 +61,7 @@ export default function Home() {
   const number3 = useSpring({ number: 30, from: { number: 0 } });
   const scrollDirection = useScrollDirection();
   const [isTransparent, setIsTransparent] = useState(true);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -98,6 +100,97 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const animateNumbers = () => {
+    const targetNumber1 = 1;
+    const targetNumber2 = 2;
+    const targetNumber3 = 30;
+
+    let currentNumber1 = 0;
+    let currentNumber2 = 0;
+    let currentNumber3 = 0;
+
+    const interval = setInterval(() => {
+      if (
+        currentNumber1 === targetNumber1 &&
+        currentNumber2 === targetNumber2 &&
+        currentNumber3 === targetNumber3
+      ) {
+        clearInterval(interval);
+      } else {
+        if (currentNumber1 < targetNumber1) {
+          currentNumber1++;
+          const number1Element = document.getElementById("number1");
+          if (number1Element) {
+            number1Element.textContent = currentNumber1.toString();
+          }
+        }
+        if (currentNumber2 < targetNumber2) {
+          currentNumber2++;
+          const number2Element = document.getElementById("number2");
+          if (number2Element) {
+            number2Element.textContent = currentNumber2.toString();
+          }
+        }
+        if (currentNumber3 < targetNumber3) {
+          currentNumber3++;
+          const number3Element = document.getElementById("number3");
+          if (number3Element) {
+            number3Element.textContent = currentNumber3.toString();
+          }
+        }
+      }
+    }, 100); // Intervalo de 100ms para "Projetos feitos"
+  };
+
+  const interval1 = setInterval(() => {
+    const number1Element = document.getElementById("number1");
+    if (number1Element) {
+      const currentNumber1 = parseInt(number1Element?.textContent ?? "0");
+      const targetNumber1 = 1;
+      if (currentNumber1 < targetNumber1) {
+        number1Element.textContent = (currentNumber1 + 1).toString();
+      } else {
+        clearInterval(interval1);
+      }
+    }
+  }, 15000); // Intervalo de 15000ms para "Ano na área"
+
+  const interval2 = setInterval(() => {
+    const number2Element = document.getElementById("number2");
+    if (number2Element) {
+      const currentNumber2 = parseInt(number2Element?.textContent ?? "0");
+      const targetNumber2 = 2;
+      if (currentNumber2 < targetNumber2) {
+        number2Element.textContent = (currentNumber2 + 1).toString();
+      } else {
+        clearInterval(interval2);
+      }
+    }
+  }, 15000); // Intervalo de 1000ms para "Sites vendidos"
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Executar a animação aqui
+          setTimeout(() => animateNumbers(), 1000);
+          //animateNumbers();
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
     };
   }, []);
 
@@ -187,7 +280,7 @@ export default function Home() {
             isOpen ? "block" : "hidden"
           } md:hidden bg-primary-color/100 transition-all duration-300
            ${isScrollingDown ? "-translate-y-full" : ""} ${
-            isTransparent ? "bg-primary-color/100" : "bg-primary-color/0"
+            isTransparent ? "bg-primary-color/100" : "bg-primary-color/70"
           }
           `}>
           <ul className="flex flex-col space-y-4 font-bold text-xl py-4">
@@ -254,20 +347,26 @@ export default function Home() {
             atualmente participo de uma startup na qual estou me desenvolvendo
             ainda mais e ampliando meus conhecimentos.
           </p>
-          <h4>formado na área e com mais de</h4>
-          <div className="numbersOfMyCarrerContainer">
-            <h1>
-              +1
-              <span>Ano na área</span>
-            </h1>
-            <h1>
-              +2
-              <span>Sites vendidos</span>
-            </h1>
-            <h1>
-              +30
-              <span>Projetos feitos</span>
-            </h1>
+          <h4>formado na área e com</h4>
+          <div className="numbersOfMyCarrerContainer" ref={sectionRef}>
+            <div className="text">
+              <p>
+                +<span id="number1">0</span>
+              </p>
+              <h1>Ano na área</h1>
+            </div>
+            <div className="text">
+              <p>
+                +<span id="number2">0</span>
+              </p>
+              <h1>Sites vendidos</h1>
+            </div>
+            <div className="text">
+              <p>
+                +<span id="number3">0</span>
+              </p>
+              <h1>Projetos feitos</h1>
+            </div>
           </div>
         </div>
       </AboutSecondPart>

@@ -41,6 +41,7 @@ class CustomDocument extends NextDocument {
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
           />
+          <title>Luan Nunes</title>
         </Head>
         <body>
           <Main />
