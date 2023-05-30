@@ -4,23 +4,19 @@ import Image from "next/image";
 
 import GitHub from "../assets/gitjhub-1.png";
 
-import OnePiece from "../assets/onepiece.jpg";
-
 interface CardProps {
   gif?: any;
   img?: any;
   name: string;
-  deploy: string;
-  github: string;
+  gitHub: string;
   description: string;
   skills: any;
 }
 
-export default function ProjectCard({
+export default function ProjectCardMobile({
   gif,
   name,
-  deploy,
-  github,
+  gitHub,
   description,
   skills,
   img,
@@ -83,10 +79,7 @@ export default function ProjectCard({
             </ul>
           </div>
           <div className="mt-2 flex items-center gap-3 stacks-container justify-around">
-            <a href={deploy} target="_blank">
-              <button className="btnAcess">Acessar</button>
-            </a>
-            <a href={github} target="_blank">
+            <a href={gitHub} target="_blank">              
               <button className="btnGit">
                 <Image src={GitHub} alt="GitHub" />
               </button>
@@ -102,12 +95,12 @@ export default function ProjectCard({
 }
 
 const CardStyle = styled.div`
-  max-width: 400px;
+  max-width: 300px;
 
   .card {
     position: relative;
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 650px;
     background: #0075ff;
     display: flex;
     justify-content: center;
@@ -184,7 +177,7 @@ const CardStyle = styled.div`
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 7rem;
+    margin-bottom: 30rem;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
   }
@@ -200,10 +193,6 @@ const CardStyle = styled.div`
 
   .sci li {
     list-style: none;
-  }
-
-  .stacks-container h5 {
-    text-shadow: 2px 2px 2px #000;
   }
 
   .sci li .stacks {
@@ -230,19 +219,33 @@ const CardStyle = styled.div`
     }
   }
 
-  .content .btnGit {
-    background-color: #000;
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
-    //border: 0.5rem solid #0075ff;
-    transition: all 0.3s;
-
-    &:hover {
-      filter: brightness(1.3);
+  .content .stacks-container {
+    h5 {
+      text-shadow: 2px 2px 2px #000;
     }
 
-    img {
-      width: 1.5rem;
+    a {
+      .btnGit {
+        background-color: #000;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        transition: all 0.3s;
+        opacity: 0.8;
+
+        &:hover {
+          filter: brightness(1.2);
+          opacity: 0.9;
+        }
+
+        img {
+          width: 1.5rem;
+        }
+      }
+
+      &:hover {
+        filter: brightness(1.2);
+        opacity: 1;
+      }
     }
   }
 
@@ -251,7 +254,7 @@ const CardStyle = styled.div`
     color: #fff;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    height: 12rem;
+    height: 11.5rem;
 
     p {
       font-weight: 600;
@@ -273,11 +276,9 @@ const CardStyle = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    max-width: 370px;
-
     .card {
-      width: 370px;
-      height: 250px;
+      width: 300px;
+      height: 650px;
     }
   }
 `;

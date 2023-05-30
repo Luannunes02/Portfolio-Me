@@ -14,7 +14,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/221195856-8c917cbd-ed6e-4f41-a922-3f4cb30fb095.png",
             "githubLink": "https://github.com/Luannunes02/noro-market/blob/main/README.md",
             "gif": "https://user-images.githubusercontent.com/105875989/221195856-8c917cbd-ed6e-4f41-a922-3f4cb30fb095.png",
-            "deploy": "https://noro-market.vercel.app"
+            "deploy": "https://noro-market.vercel.app",
+            "descricao": "Loja virtual que desenvolvi, é possível acrescentar produtos no carrinho, calcúlar o frete para região(estou usando uma API de CEP para consultar), comprar os produtos. Tudo feito com um design amigável e eficaz."
         },        
         {
             "id": 2,
@@ -29,7 +30,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/221062091-6cef1d45-91ae-4ba1-970b-983abfb2a7b1.png",
             "githubLink": "https://github.com/Luannunes02/Ciane-corretora",
             "gif": "https://user-images.githubusercontent.com/105875989/221061483-9a1e5da5-9cb0-415f-9ab5-64100fa40f5c.gif",
-            "deploy": "https://ciane-corretora.vercel.app"
+            "deploy": "https://ciane-corretora.vercel.app",
+            "descricao": "Site que vendi para uma corretora de imóveis que tinha o objetivo de divulgar seus serviços e imóveis, desenvolvi o site fazendo um arquivo JSON para usar como API, o site está responsivo e com um design agrádavel e interativo."
         },
         {
             "id": 3,
@@ -44,7 +46,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/221062690-5d853a0f-aae3-4685-8e3d-5b2a50bcf94c.png",
             "githubLink": "https://github.com/Luannunes02/regiane-corretora",
             "gif": "https://user-images.githubusercontent.com/105875989/221062383-ea8a081e-18d5-4ddf-930f-d1e89180f93b.gif",
-            "deploy": "https://regiane-corretora.vercel.app"
+            "deploy": "https://regiane-corretora.vercel.app",
+            "descricao": "Site que vendi para uma corretora de imóveis que tinha o objetivo de divulgar seus serviços e imóveis, desenvolvi o site fazendo um arquivo JSON para usar como API, o site está responsivo e com um design agrádavel e interativo."
         },
         {
             "id": 4,
@@ -58,7 +61,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/198148570-db2b0fde-55d7-4d3d-979b-1f61f0a677dc.png",
             "githubLink": "https://github.com/Luannunes02/Noroeste",
             "gif": "https://user-images.githubusercontent.com/105875989/198149469-174a317d-8111-465e-8dbd-4749e3a84fcd.gif",
-            "deploy": "https://noroeste.vercel.app"
+            "deploy": "https://noroeste.vercel.app",
+            "descricao": "Site para demonstrar os produtos que são vendidos na Noroeste Nutrição Animal LTDA, tem uma seção inicial, uma sobre e outro espeficamente dos produtos sendo possível acessá-los e ver mais informações sobre cada um."
         },
         {
             "id": 5,
@@ -73,7 +77,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/210191161-02c81622-8497-4d4d-a78f-41bd92c8fe8a.png",
             "githubLink": "https://github.com/Luannunes02/IPAM",
             "gif": "https://user-images.githubusercontent.com/105875989/210191477-04b77c2c-b6c9-4396-96e1-398a9ccf649d.gif",
-            "deploy": "https://ipam-delta.vercel.app"
+            "deploy": "https://ipam-delta.vercel.app",
+            "descricao": "Projeto do processo seletivo da IPAM Amazônia, é uma SPA que foi desenvolvida usando React + Redux, a página faz uma breve introdução sobre IPAM Amazônia e logo após pede uma doação para ajudar com as pesquisas, No final do site pode-se comentar na página."
         },
         {
             "id": 6,
@@ -88,7 +93,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/203288618-b8c6b092-50fe-45dd-b7cd-e1caff447419.png",
             "githubLink": "https://github.com/Luannunes02/ReactPosts",
             "gif": "https://user-images.githubusercontent.com/105875989/203288653-8ef0682c-1dfd-44bc-9d09-89986613afcb.gif",
-            "deploy": "https://reactposts-delta.vercel.app"
+            "deploy": "https://reactposts-delta.vercel.app",
+            "descricao": "Página que é possível realizar posts desenvolvida usando React, Typescript e Styled Components. Ao fazer uma postagem você deve usar uma foto de sua prefêrencia, nome e mensagem, tudo e postado e atualizado no mesmo momento, também é possível excluir."
         },
         {
             "id": 7,
@@ -101,7 +107,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/196137103-fb0930ba-6f31-48ca-8f11-ead2df7afd02.png",
             "githubLink": "https://github.com/Luannunes02/PrimeFlix-Site",
             "gif": "https://user-images.githubusercontent.com/105875989/196571717-b7716e80-fc93-4eba-b3cc-f9bcd9530437.gif",
-            "deploy": "https://primeflix-zeta.vercel.app"
+            "deploy": "https://primeflix-zeta.vercel.app",
+            "descricao": "Site para acompanhar os filmes que estão em cartaz, é possível adiciona-los a lista de favoritos e também buscar pelo trailer no Youtube. Esse site usa a API do The Movie Database (TMDB)."
         },
         {
             "id": 8,
@@ -115,7 +122,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/215294738-84ac9d2f-cc52-460f-83e1-81517b3e78e2.png",
             "githubLink": "https://github.com/Luannunes02/FakeShop",
             "gif": "https://user-images.githubusercontent.com/105875989/215294672-6cb6191b-ed22-4688-9555-3a0495d64158.gif",
-            "deploy": "https://fakeshop-nu.vercel.app"
+            "deploy": "https://fakeshop-nu.vercel.app",
+            "descricao": "Loja virtual que usa uma API fake de produtos para simular uma loja virtual, foi usado consumo de API e Redux para controlar os estados e armazenar a API."
         },
         {
             "id": 9,
@@ -129,7 +137,8 @@
             "capa": "https://user-images.githubusercontent.com/105875989/196402970-e6af7913-d0c1-4673-a81e-b07389d8462b.png",
             "githubLink": "https://github.com/Luannunes02/DevStore",
             "gif": "https://user-images.githubusercontent.com/105875989/196573676-394f87be-8eb6-4806-818d-4708862a0804.gif",
-            "deploy": "https://devstore-amber.vercel.app"
+            "deploy": "https://devstore-amber.vercel.app",
+            "descricao": "Loja virtual que é possivel cadastrar e comprar produtos, foi feita com JavaScript, Bootstrap, Sass e HTML. Todo o ato de compra é feito na home, também há um carrinho que se abre como modal e tem estoque de produtos."
         }
     ]
 }

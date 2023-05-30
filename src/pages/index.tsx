@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import { useScrollDirection } from "@/Hooks/useScrollDirection";
-import { useSpring, animated } from "@react-spring/web";
 import "intersection-observer";
-import * as Yup from "yup";
 
 import LuanLogoWhite from "@/assets/luan-logo-white.png";
 import LuanEdit from "@/assets/LuanEdit.png";
@@ -38,10 +35,16 @@ import ButtonDefault from "@/components/ButtonDefault";
 import CardServices from "@/components/CardServices";
 import SkillCard from "@/components/SkillCard";
 import ProjectCard from "@/components/ProjectCard";
+import ProjectCardFullStack from "@/components/ProjectCardFullStack";
+import ProjectCardMobile from "@/components/ProjectCardMobile";
 import ContactForm from "@/components/ContactForm";
 
 import ProjectsApi from "@/pages/api/projects-api.json";
 const projects = ProjectsApi.projects;
+import ProjectsApiFullStack from "@/pages/api/projects-api-fullstack.json";
+const projectsFullStack = ProjectsApiFullStack.projects;
+import ProjectsApiMobile from "@/pages/api/projects-api-mobile.json";
+const projectsMobile = ProjectsApiMobile.projects;
 
 import {
   About,
@@ -56,12 +59,16 @@ import {
 import ContactWrapper from "@/components/ContactWrapper";
 
 export default function Home() {
-  const number1 = useSpring({ number: 1, from: { number: 0 } });
-  const number2 = useSpring({ number: 2, from: { number: 0 } });
-  const number3 = useSpring({ number: 30, from: { number: 0 } });
-  const scrollDirection = useScrollDirection();
   const [isTransparent, setIsTransparent] = useState(true);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [projectsType, setProjectsType] = useState("web");
+  const [currentNumber1, setCurrentNumber1] = useState(0);
+  const [currentNumber2, setCurrentNumber2] = useState(0);
+  const [currentNumber3, setCurrentNumber3] = useState(0);
+
+  const handleTypeChange = (type: string) => {
+    setProjectsType(type);
+  };
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -108,68 +115,28 @@ export default function Home() {
     const targetNumber2 = 2;
     const targetNumber3 = 30;
 
-    let currentNumber1 = 0;
-    let currentNumber2 = 0;
-    let currentNumber3 = 0;
+    let step = 1;
 
     const interval = setInterval(() => {
       if (
-        currentNumber1 === targetNumber1 &&
-        currentNumber2 === targetNumber2 &&
-        currentNumber3 === targetNumber3
+        currentNumber1 >= targetNumber1 &&
+        currentNumber2 >= targetNumber2 &&
+        currentNumber3 >= targetNumber3
       ) {
         clearInterval(interval);
       } else {
-        if (currentNumber1 < targetNumber1) {
-          currentNumber1++;
-          const number1Element = document.getElementById("number1");
-          if (number1Element) {
-            number1Element.textContent = currentNumber1.toString();
-          }
-        }
-        if (currentNumber2 < targetNumber2) {
-          currentNumber2++;
-          const number2Element = document.getElementById("number2");
-          if (number2Element) {
-            number2Element.textContent = currentNumber2.toString();
-          }
-        }
-        if (currentNumber3 < targetNumber3) {
-          currentNumber3++;
-          const number3Element = document.getElementById("number3");
-          if (number3Element) {
-            number3Element.textContent = currentNumber3.toString();
-          }
-        }
+        setCurrentNumber1((prevNumber) =>
+          prevNumber < targetNumber1 ? prevNumber + step : prevNumber
+        );
+        setCurrentNumber2((prevNumber) =>
+          prevNumber < targetNumber2 ? prevNumber + step : prevNumber
+        );
+        setCurrentNumber3((prevNumber) =>
+          prevNumber < targetNumber3 ? prevNumber + step : prevNumber
+        );
       }
     }, 100); // Intervalo de 100ms para "Projetos feitos"
   };
-
-  const interval1 = setInterval(() => {
-    const number1Element = document.getElementById("number1");
-    if (number1Element) {
-      const currentNumber1 = parseInt(number1Element?.textContent ?? "0");
-      const targetNumber1 = 1;
-      if (currentNumber1 < targetNumber1) {
-        number1Element.textContent = (currentNumber1 + 1).toString();
-      } else {
-        clearInterval(interval1);
-      }
-    }
-  }, 15000); // Intervalo de 15000ms para "Ano na área"
-
-  const interval2 = setInterval(() => {
-    const number2Element = document.getElementById("number2");
-    if (number2Element) {
-      const currentNumber2 = parseInt(number2Element?.textContent ?? "0");
-      const targetNumber2 = 2;
-      if (currentNumber2 < targetNumber2) {
-        number2Element.textContent = (currentNumber2 + 1).toString();
-      } else {
-        clearInterval(interval2);
-      }
-    }
-  }, 15000); // Intervalo de 1000ms para "Sites vendidos"
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -194,20 +161,20 @@ export default function Home() {
     };
   }, []);
 
-  const handleSubmit = (values: any, { setSubmitting }: any) => {
-    // Lógica para lidar com o envio do formulário
-    console.log(values);
-    setSubmitting(false);
-  };
+  useEffect(() => {
+    const interval1 = setInterval(() => {
+      setCurrentNumber1((prevNumber) => prevNumber + 1);
+    }, 15000); // Intervalo de 15000ms para "Ano na área"
 
-  const validationSchema = Yup.object({
-    name: Yup.string().required("O nome é obrigatório"),
-    email: Yup.string()
-      .email("E-mail inválido")
-      .required("O e-mail é obrigatório"),
-    subject: Yup.string().required("O assunto é obrigatório"),
-    message: Yup.string().required("A mensagem é obrigatória"),
-  });
+    const interval2 = setInterval(() => {
+      setCurrentNumber2((prevNumber) => prevNumber + 1);
+    }, 15000); // Intervalo de 15000ms para "Sites vendidos"
+
+    return () => {
+      clearInterval(interval1);
+      clearInterval(interval2);
+    };
+  }, []);
 
   return (
     <main>
@@ -351,19 +318,19 @@ export default function Home() {
           <div className="numbersOfMyCarrerContainer" ref={sectionRef}>
             <div className="text">
               <p>
-                +<span id="number1">0</span>
+                +<span>{currentNumber1}</span>
               </p>
               <h1>Ano na área</h1>
             </div>
             <div className="text">
               <p>
-                +<span id="number2">0</span>
+                +<span>{currentNumber2}</span>
               </p>
               <h1>Sites vendidos</h1>
             </div>
             <div className="text">
               <p>
-                +<span id="number3">0</span>
+                +<span>{currentNumber3}</span>
               </p>
               <h1>Projetos feitos</h1>
             </div>
@@ -408,21 +375,76 @@ export default function Home() {
         <div className="container mx-auto">
           <h1 id="Projects">PROJETOS</h1>
           <h2>E SITES QUE VENDI</h2>
-          <div className="projectsCntainer">
-            {projects.map((project: any) => {
-              return (
+          <div className="buttonContainer mt-5">
+            <button
+              className={`typeButton ${projectsType === "web" ? "active" : ""}`}
+              onClick={() => handleTypeChange("web")}>
+              Front-end
+            </button>
+            <button
+              className={`typeButton ${
+                projectsType === "fullstack" ? "active" : ""
+              }`}
+              onClick={() => handleTypeChange("fullstack")}>
+              Fullstack
+            </button>
+            <button
+              className={`typeButton ${
+                projectsType === "mobile" ? "active" : ""
+              }`}
+              onClick={() => handleTypeChange("mobile")}>
+              Mobile
+            </button>
+          </div>
+          {projectsType === "web" && (
+            <div className="flex projectsCntainer">
+              {projects.map((project: any) => (
                 <ProjectCard
                   key={project.id}
                   name={project.nome}
+                  description={project.descricao}
                   gif={project.gif}
                   deploy={project.deploy}
                   github={project.githubLink}
                   skills={project.tecnologias}
                   img={project.capa}
                 />
-              );
-            })}
-          </div>
+              ))}
+            </div>
+          )}
+
+          {projectsType === "fullstack" && (
+            <div className="flex projectsCntainer">
+              {projectsFullStack.map((project: any) => (
+                <ProjectCardFullStack
+                  key={project.id}
+                  name={project.nome}
+                  gif={project.gif}
+                  front={project.front}
+                  back={project.back}
+                  skills={project.tecnologias}
+                  img={project.capa}
+                  description={project.descricao}
+                />
+              ))}
+            </div>
+          )}
+
+          {projectsType === "mobile" && (
+            <div className="flex projectsCntainer">
+              {projectsMobile.map((project: any) => (
+                <ProjectCardMobile
+                  key={project.id}
+                  name={project.nome}
+                  gif={project.gif}
+                  gitHub={project.githubLink}
+                  skills={project.tecnologias}
+                  img={project.capa}
+                  description={project.descricao}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </Projects>
 

@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "nome": "Noroeste bloco",
+            "tecnologias": 
+            [
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/445a8dea-aa71-4b15-97b9-fbaeac729c5d",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/1b9c7086-73e5-44a0-b455-92773d40b992",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/766f4d43-3f5e-44a2-9f33-609dbe0d3307",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/e51cc109-cdf9-4142-959f-458f75ed12b2"
+            ],
+            "descricao": "Aplicação completa para vendas, podendo tirar pedidos, consultar produtos e valores além de também conseguir consultar como estão as vendas para ver se o vendedor bateu a meta.",
+            "capa": "",            
+            "gif": "",
+            "githubLink": ""
+        },        
+        {
+            "id": 2,
+            "nome": "Loja de Sapatos",
+            "tecnologias": 
+            [
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/445a8dea-aa71-4b15-97b9-fbaeac729c5d",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/4a00dbcc-a95e-4258-971f-d82c8abffe26"
+            ],
+            "descricao": "Projeto de interface de uma loja de tênis, feito no curso do SujeitoProgrmador, excelente projeto para treinar e aprender novas funcionalidades no ReactNative.",
+            "capa": "https://user-images.githubusercontent.com/105875989/203287579-8196e9f0-e17e-44ae-bcab-8a7f7c0742db.png",            
+            "gif": "https://user-images.githubusercontent.com/105875989/203287671-d3dfa537-0307-4a0e-91e8-9f4613f9ba3d.gif",
+            "githubLink": "https://github.com/Luannunes02/ShoesStore"
+        },  
+        {
+            "id": 3,
+            "nome": "Todo list",
+            "tecnologias": 
+            [
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/445a8dea-aa71-4b15-97b9-fbaeac729c5d",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/4a00dbcc-a95e-4258-971f-d82c8abffe26"
+            ],
+            "descricao": "Um app de lista de tarefas feito para você acrescentar suas tarefas e conforme vai finalizando as tarefas, você pode apagá-la e deixar apenas as que estão pendentes.",
+            "capa": "https://user-images.githubusercontent.com/105875989/201526441-cc59403b-f44d-4163-827d-992264db70f7.png",            
+            "gif": "https://user-images.githubusercontent.com/105875989/201526433-7a4a8031-843b-48da-adf0-03d3e6c04ae9.gif",
+            "githubLink": "https://github.com/Luannunes02/Todo-List-ReactNative"
+        },  
+        {
+            "id": 4,
+            "nome": "Calculadora de IMC",
+            "tecnologias": 
+            [
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/445a8dea-aa71-4b15-97b9-fbaeac729c5d",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/1b9c7086-73e5-44a0-b455-92773d40b992"
+            ],
+            "descricao": "App que calcula o IMC(indice de massa corporal) feito com React Native e Typescript. O App além de calcúlar o IMC informa como está seu peso, se está ideal, acima do peso...",
+            "capa": "https://user-images.githubusercontent.com/105875989/201987690-f8047ed3-9db4-4c67-bf82-c16868623083.png",            
+            "gif": "https://user-images.githubusercontent.com/105875989/201987639-437856c5-a5d1-4cb0-bc69-c758aba761ea.gif",
+            "githubLink": "https://github.com/Luannunes02/IMC-Calculator-ReactNative"
+        }
+    ]
+}

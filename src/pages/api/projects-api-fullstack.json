@@ -1,0 +1,55 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "nome": "Farmácia Eagle",
+            "tecnologias": 
+            [
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/efb36096-4e16-4ea0-bfa4-f1ef476c0b98",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/72981be5-616e-47e0-a556-e585cbfdab68",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/50221564-1895-4db3-af64-5f49fcbe9ea9",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/f634f01e-c744-40a3-980f-c7016d717da9",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/04470476-006a-4846-b7e9-6055d8455f40"
+            ],
+            "descricao": "A aplicação FullStack consiste em uma farmácia online, podendo se comprar produtos, alterar, excluir e criar, tudo com um desgin amigável e interativo. O back-end foi feito com Laravel e MySQL e o front-end com Angular.",
+            "capa": "https://user-images.githubusercontent.com/105875989/240444102-d2d062e3-7d94-4c87-8e13-f248779ecc18.png",            
+            "gif": "https://user-images.githubusercontent.com/105875989/240444161-16f1b3a5-8b9e-48ee-a83c-c20e295229b3.gif",
+            "front": "https://github.com/Luannunes02/front-end-farmacia-eagle",
+            "back": "https://github.com/Luannunes02/back-end-farmacia-eagle"
+        },        
+        {
+            "id": 2,
+            "nome": "Cadastro de pessoas",
+            "tecnologias": 
+            [
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/445a8dea-aa71-4b15-97b9-fbaeac729c5d",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/1b9c7086-73e5-44a0-b455-92773d40b992",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/72981be5-616e-47e0-a556-e585cbfdab68",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/af8d2ce5-0150-41c2-ba46-fd4ccb2288b3",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/9b8aa92c-52ed-4634-b7a5-13c4f94798b9"
+            ],
+            "descricao": "Aplicação FullStack foi desenvolviado usando React, Typescript, NodeJs e MongoDB. Projeto de um processo seletivo, é possível cadastrar, alterar, excluir e atualizar os cadastros de pessoas.",
+            "capa": "",            
+            "gif": "",
+            "front": "https://github.com/Luannunes02/Front-End-XC",
+            "back": "https://github.com/Luannunes02/Back-end-XCSolutions"
+        },
+        {
+            "id": 3,
+            "nome": "",
+            "tecnologias": 
+            [
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/445a8dea-aa71-4b15-97b9-fbaeac729c5d",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/1b9c7086-73e5-44a0-b455-92773d40b992",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/72981be5-616e-47e0-a556-e585cbfdab68",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/af8d2ce5-0150-41c2-ba46-fd4ccb2288b3",
+                "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/9b8aa92c-52ed-4634-b7a5-13c4f94798b9"
+            ],
+            "descricao": "",
+            "capa": "",            
+            "gif": "",
+            "front": "",
+            "back": ""
+        }
+    ]
+}

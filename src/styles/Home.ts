@@ -289,7 +289,7 @@ export const Projects = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 15rem 0 5rem;
+  padding: 17rem 0 5rem;
   transition: all 0.3s;
 
   h1 {
@@ -305,8 +305,31 @@ export const Projects = styled.section`
     color: #0075ff;
   }
 
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .typeButton {
+      padding: 8px 16px;
+      margin-right: 8px;
+      border: none;
+      background-color: #e0e0e0;
+      color: #0075ff;
+      font-weight: bold;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all .4s;
+    }
+
+    .typeButton.active {
+      background-color: #0075ff;
+      color: #fff;
+    }
+  }
+
   .projectsCntainer {
-    margin-top: 4rem;
+    margin-top: 0.7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -4,23 +4,21 @@ import Image from "next/image";
 
 import GitHub from "../assets/gitjhub-1.png";
 
-import OnePiece from "../assets/onepiece.jpg";
-
 interface CardProps {
   gif?: any;
   img?: any;
   name: string;
-  deploy: string;
-  github: string;
+  front: string;
+  back: string;
   description: string;
   skills: any;
 }
 
-export default function ProjectCard({
+export default function ProjectCardFullStack({
   gif,
   name,
-  deploy,
-  github,
+  front,
+  back,
   description,
   skills,
   img,
@@ -83,10 +81,14 @@ export default function ProjectCard({
             </ul>
           </div>
           <div className="mt-2 flex items-center gap-3 stacks-container justify-around">
-            <a href={deploy} target="_blank">
-              <button className="btnAcess">Acessar</button>
+            <a href={front} target="_blank">
+              Front-end
+              <button className="btnGit">
+                <Image src={GitHub} alt="GitHub" />
+              </button>
             </a>
-            <a href={github} target="_blank">
+            <a href={back} target="_blank">
+              Back-end
               <button className="btnGit">
                 <Image src={GitHub} alt="GitHub" />
               </button>
@@ -184,7 +186,7 @@ const CardStyle = styled.div`
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 7rem;
+    margin-bottom: 6rem;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
   }
@@ -200,10 +202,6 @@ const CardStyle = styled.div`
 
   .sci li {
     list-style: none;
-  }
-
-  .stacks-container h5 {
-    text-shadow: 2px 2px 2px #000;
   }
 
   .sci li .stacks {
@@ -230,19 +228,37 @@ const CardStyle = styled.div`
     }
   }
 
-  .content .btnGit {
-    background-color: #000;
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
-    //border: 0.5rem solid #0075ff;
-    transition: all 0.3s;
-
-    &:hover {
-      filter: brightness(1.3);
+  .content .stacks-container {
+    h5 {
+      text-shadow: 2px 2px 2px #000;
     }
 
-    img {
-      width: 1.5rem;
+    a {
+      background-color: #0075ff;
+      padding: 0.2rem 0.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 0.7rem;
+      font-weight: 600;
+      transition: all 0.3s;
+      opacity: 0.6;
+
+      .btnGit {
+        background-color: #000;
+        padding: 0.3rem 0.3rem;
+        border-radius: 20px;
+
+        img {
+          width: 1.5rem;
+        }
+      }
+
+      &:hover {
+        filter: brightness(1.2);
+        opacity: 0.9;
+      }
     }
   }
 
@@ -251,7 +267,7 @@ const CardStyle = styled.div`
     color: #fff;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    height: 12rem;
+    height: 10rem;
 
     p {
       font-weight: 600;
