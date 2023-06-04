@@ -12,7 +12,7 @@
                 "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/04470476-006a-4846-b7e9-6055d8455f40"
             ],
             "descricao": "A aplicação FullStack consiste em uma farmácia online, podendo se comprar produtos, alterar, excluir e criar, tudo com um desgin amigável e interativo. O back-end foi feito com Laravel e MySQL e o front-end com Angular.",
-            "capa": "https://user-images.githubusercontent.com/105875989/240444102-d2d062e3-7d94-4c87-8e13-f248779ecc18.png",            
+            "capa": "https://user-images.githubusercontent.com/105875989/242129481-f524a81f-4fd4-4388-b706-d8cbe46fe74b.png",            
             "gif": "https://user-images.githubusercontent.com/105875989/240444161-16f1b3a5-8b9e-48ee-a83c-c20e295229b3.gif",
             "front": "https://github.com/Luannunes02/front-end-farmacia-eagle",
             "back": "https://github.com/Luannunes02/back-end-farmacia-eagle"
@@ -29,14 +29,14 @@
                 "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/9b8aa92c-52ed-4634-b7a5-13c4f94798b9"
             ],
             "descricao": "Aplicação FullStack foi desenvolviado usando React, Typescript, NodeJs e MongoDB. Projeto de um processo seletivo, é possível cadastrar, alterar, excluir e atualizar os cadastros de pessoas.",
-            "capa": "",            
-            "gif": "",
+            "capa": "https://user-images.githubusercontent.com/105875989/242132428-5dc66698-36f0-43b5-a80c-8bc35c1c3aae.png",            
+            "gif": "https://user-images.githubusercontent.com/105875989/242132197-9ec8da2c-a956-4e94-b977-c5ca276b8062.gif",
             "front": "https://github.com/Luannunes02/Front-End-XC",
             "back": "https://github.com/Luannunes02/Back-end-XCSolutions"
         },
         {
             "id": 3,
-            "nome": "",
+            "nome": "Cadastro de usuários",
             "tecnologias": 
             [
                 "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/445a8dea-aa71-4b15-97b9-fbaeac729c5d",
@@ -45,11 +45,11 @@
                 "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/af8d2ce5-0150-41c2-ba46-fd4ccb2288b3",
                 "https://github.com/Luannunesesb01/Novo-portfolio-skills/assets/116287208/9b8aa92c-52ed-4634-b7a5-13c4f94798b9"
             ],
-            "descricao": "",
-            "capa": "",            
-            "gif": "",
-            "front": "",
-            "back": ""
+            "descricao": "Essa aplicação fullstack que usa React no Front-end e no back-end Nodejs com MongoDB faz o cadastro, consulta, alteração e exclusão de usuários, além de lista por página.",
+            "capa": "https://user-images.githubusercontent.com/105875989/242746860-f6131bb8-752d-496b-a463-82ee979923cd.png",            
+            "gif": "https://user-images.githubusercontent.com/105875989/242746795-bea0332b-51b2-4478-8e40-0223fe6f6649.gif",
+            "front": "https://github.com/Luannunes02/Cadastro-de-usuarios-front-end",
+            "back": "https://github.com/Luannunes02/Cadastro-de-usuarios-back-end"
         }
     ]
 }
