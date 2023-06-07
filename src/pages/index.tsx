@@ -113,7 +113,7 @@ export default function Home() {
   const animateNumbers = () => {
     const targetNumber1 = 1;
     const targetNumber2 = 2;
-    const targetNumber3 = 30;
+    const targetNumber3 = 40;
 
     let step = 1;
 
@@ -161,20 +161,6 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    const interval1 = setInterval(() => {
-      setCurrentNumber1((prevNumber) => prevNumber + 1);
-    }, 15000); // Intervalo de 15000ms para "Ano na área"
-
-    const interval2 = setInterval(() => {
-      setCurrentNumber2((prevNumber) => prevNumber + 1);
-    }, 15000); // Intervalo de 15000ms para "Sites vendidos"
-
-    return () => {
-      clearInterval(interval1);
-      clearInterval(interval2);
-    };
-  }, []);
 
   return (
     <main>
@@ -271,7 +257,7 @@ export default function Home() {
       </Header>
 
       <About id="About">
-        <div className="container mx-auto flex flex-row pt-24 grid grid-cols-2 flex flex-wrap">
+        <div className="container mx-auto flex-row pt-24 grid grid-cols-2 flex-wrap">
           <div className="flex align-center justify-center textContainer">
             <h1>
               Luan
